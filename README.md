@@ -2,6 +2,24 @@
 
 ## Installation
 
+### Git
+
+Please install Git on your local machine https://git-scm.com/download
+
+Verify it's done:
+- In console type `git --version`
+- If you see smth like `git version 2.29.2.windows.2` you're done
+
+### Configuring SSH
+
+We're highly recommend to configure SSH key for your machine (Windows/MacOS/Linux/etc) and put it into your Github account.
+
+Follow this instruction to complete that step: [https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-configure-GitLab-SSH-keys-for-secure-Git-connections](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
+#### MacOs tips
+you can get your public key by run in terminal `cat ~/.ssh/id_rsa.pub`
+
+
 ### Fork current repository into your account
 
 1. Navigate to https://github.com/School-of-Digital-Competencies/js-ts-tasks
