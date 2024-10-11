@@ -7,7 +7,10 @@
     "prepare": "husky install ./.husky",
     "test": "npm run test:junit",
     "test:local": "mocha test",
-    "test:local:backToFront": "mocha test -g 'backToFront'",
+    "test:local:debounce": "mocha test -g 'debounce'",
+    "test:local:mockApi": "mocha test -g 'mockApi'",
+    "test:local:all": "mocha test -g 'all'",
+    "test:local:race": "mocha test -g 'race'",
     "test:nyan": "mocha test --reporter nyan",
     "test:report": "cross-env MOCHA_FILE=reports/report.xml mocha test --reporter mocha-xunit-reporter",
     "test:junit": "cross-env MOCHA_FILE=junit.xml mocha test --reporter mocha-junit-reporter",
@@ -31,10 +34,13 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "chai-spies": "^1.0.0",
     "cross-env": "^7.0.3",
     "mocha": "^10.0.0",
     "mocha-junit-reporter": "^2.1.0",
-    "mocha-xunit-reporter": "^2.3.0"
+    "mocha-xunit-reporter": "^2.3.0",
+    "sinon": "^16.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
