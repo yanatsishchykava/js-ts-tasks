@@ -20,8 +20,9 @@ solutions.forEach(solution => {
     describe(solution, () => {
       testCases.forEach(testCase => {
         it(`should return "${JSON.stringify(testCase.expected)}"`, () => {
-          const message = method(...testCase.fnArguments);
-          assert.deepEqual(message, testCase.expected);
+          const fn = method(...testCase.fnOuterArguments);
+          const message = fn(...testCase.fnArguments);
+          assert.deepStrictEqual(message, testCase.expected);
         });
       });
     });

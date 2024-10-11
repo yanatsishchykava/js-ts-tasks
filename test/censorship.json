@@ -1,0 +1,18 @@
+[
+  {
+    "fnOuterArguments": [["a", "bc d"]],
+    "fnArguments": ["There is a sample function saying bc d and a little hey"],
+    "expected": "There is * s*mple function s*ying **** *nd * little hey"
+  },
+  {
+    "fnOuterArguments": [["ship", "blow", "blew up"]],
+    "fnArguments": ["There once was a ship that put to sea\nThe name of the ship was the Billy of Tea\nThe winds blew up, her bow dipped down\nOh blow, my bully boys, blow (huh)"],
+    "expected": "There once was a **** that put to sea\nThe name of the **** was the Billy of Tea\nThe winds *******, her bow dipped down\nOh ****, my bully boys, **** (huh)"
+  },
+  {
+    "fnOuterArguments": [["come", "tea", "rum", "go"]],
+    "fnArguments": ["Soon may the Wellerman come\nTo bring us sugar and tea and rum\nOne day, when the tonguing is done\nWe'll take our leave and go"],
+    "expected": "Soon may the Wellerman ****\nTo bring us sugar and *** and ***\nOne day, when the tonguing is done\nWe'll take our leave and **"
+  }
+]
+

@@ -1,0 +1,18 @@
+[
+  {
+    "fnOuterArguments": [100],
+    "fnArguments": [2, 10],
+    "expected": [2, 3, 5, 7]
+  },
+  {
+    "fnOuterArguments": [100],
+    "fnArguments": [54, 87],
+    "expected": [59, 61, 67, 71, 73, 79, 83]
+  },
+  {
+    "fnOuterArguments": [2],
+    "fnArguments": [2, 2],
+    "expected": [2]
+  }
+]
+

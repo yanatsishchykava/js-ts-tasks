@@ -1,0 +1,31 @@
+[
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "street": "Main road",
+        "house": "43",
+        "apartment": "99",
+        "city": "New-York",
+        "postalCode": "NY3254",
+        "country": "USA"
+      }
+    ],
+    "expected": "Main road, 43, 99, New-York, NY3254, USA"
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "street": "Savičiaus g",
+        "house": "17",
+        "apartment": "1",
+        "city": "Vilnius",
+        "postalCode": "01126",
+        "country": "Lithuania"
+      }
+    ],
+    "expected": "Savičiaus g, 17, 1, Vilnius, 01126, Lithuania"
+  }
+]
+
