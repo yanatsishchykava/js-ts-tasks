@@ -1,0 +1,14 @@
+[
+  {
+    "fnArguments": [100, 300, 500],
+    "expected": 400
+  },
+  {
+    "fnArguments": [40000, 40000, 40000],
+    "expected": 0
+  },
+  {
+    "fnArguments": [2, 1, 3],
+    "expected": 2
+  }
+]

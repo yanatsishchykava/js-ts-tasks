@@ -1,0 +1,14 @@
+[
+  {
+    "fnArguments": [5, 2],
+    "expected": 20.94
+  },
+  {
+    "fnArguments": [12, 5],
+    "expected": 314.16
+  },
+  {
+    "fnArguments": [7, 1],
+    "expected": 7.33
+  }
+]
