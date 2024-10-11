@@ -1,0 +1,14 @@
+[
+  {
+    "fnArguments": [{ "X": 1, "Y": 1 }, "x"],
+    "expected": false
+  },
+  {
+    "fnArguments": [{ "X": 10, "property": 10 }, "property"],
+    "expected": true
+  },
+  {
+    "fnArguments": [{ "X": 0, "Y": 0 }, "nothing"],
+    "expected": false
+  }
+]

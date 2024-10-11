@@ -1,0 +1,14 @@
+[
+  {
+    "fnArguments": [{ "X": 1, "Y": 1 }, { "X": 2, "Y": 2 }],
+    "expected": 1.41
+  },
+  {
+    "fnArguments": [{ "X": 10, "Y": 10 }, { "X": 20, "Y": 20 }],
+    "expected": 14.14
+  },
+  {
+    "fnArguments": [{ "X": 0, "Y": 0 }, { "X": 5, "Y": 5 }],
+    "expected": 7.07
+  }
+]

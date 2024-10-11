@@ -1,0 +1,14 @@
+[
+  {
+    "fnArguments": ["xavgabcdefmokd", "hkotogabcdefl"],
+    "expected": "gabcdef"
+  },
+  {
+    "fnArguments": ["abcure", "bctabchhhhhhh"],
+    "expected": "abc"
+  },
+  {
+    "fnArguments": ["qwe", "e"],
+    "expected": "e"
+  }
+]
