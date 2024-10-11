@@ -1,0 +1,32 @@
+[
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "salary": 500,
+        "business": 100,
+        "investment": 400
+      },
+      {
+        "taxes": 100,
+        "education": 200
+      }
+    ],
+    "expected": 700
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "a": 10,
+        "b": 20,
+        "c": 30
+      },
+      {
+        "d": 10,
+        "e": 20
+      }
+    ],
+    "expected": 30
+  }
+]

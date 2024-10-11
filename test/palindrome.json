@@ -1,0 +1,23 @@
+[
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      "A man, a plan, a canal: Panama"
+    ],
+    "expected": true
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      "race a car"
+    ],
+    "expected": false
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      " "
+    ],
+    "expected": true
+  }
+]

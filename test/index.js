@@ -2,6 +2,7 @@ const assert = require('assert');
 const { describe, it } = require('mocha');
 const path = require('path');
 const fs = require('fs');
+const { TestUtils } = require('./testUtils');
 
 const solutionsPath = path.join(__dirname, '../src');
 const testPath = __dirname;
@@ -20,8 +21,9 @@ solutions.forEach(solution => {
     describe(solution, () => {
       testCases.forEach(testCase => {
         it(`should return "${JSON.stringify(testCase.expected)}"`, () => {
-          const message = method(...testCase.fnArguments);
-          assert.deepEqual(message, testCase.expected);
+          const fn = method(TestUtils, ...testCase.fnOuterArguments);
+          const message = fn(...testCase.fnArguments);
+          assert.deepStrictEqual(message, testCase.expected);
         });
       });
     });
