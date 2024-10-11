@@ -1,0 +1,39 @@
+[
+  {
+    "fnArguments": [
+      {
+        "value": "The quick brown fox jumps over the lazy dog.",
+        "type": "string"
+      }
+    ],
+    "expected": {
+      "value": true,
+      "type": "boolean"
+    }
+  },
+  {
+    "fnArguments": [
+      {
+        "value": 4931,
+        "type": "number"
+      }
+    ],
+    "expected": {
+      "value": false,
+      "type": "boolean"
+    }
+  },
+  {
+    "fnArguments": [
+      {
+        "value": 1234567890,
+        "type": "number"
+      }
+    ],
+    "expected": {
+      "value": true,
+      "type": "boolean"
+    }
+  }
+]
+

@@ -1,0 +1,123 @@
+[
+  {
+    "fnArguments": [
+      {
+        "value": -10,
+        "type": "number"
+      },
+      {
+        "value": "C",
+        "type": "string"
+      },
+      {
+        "value": "K",
+        "type": "string"
+      }
+    ],
+    "expected": {
+      "value": 263.15,
+      "type": "number"
+    }
+  },
+  {
+    "fnArguments": [
+      {
+        "value": 295,
+        "type": "number"
+      },
+      {
+        "value": "K",
+        "type": "string"
+      },
+      {
+        "value": "C",
+        "type": "string"
+      }
+    ],
+    "expected": {
+      "value": 21.85,
+      "type": "number"
+    }
+  },
+  {
+    "fnArguments": [
+      {
+        "value": 1000.55,
+        "type": "number"
+      },
+      {
+        "value": "m",
+        "type": "string"
+      },
+      {
+        "value": "mi",
+        "type": "string"
+      }
+    ],
+    "expected": {
+      "value": 0.62,
+      "type": "number"
+    }
+  },
+  {
+    "fnArguments": [
+      {
+        "value": 24.91,
+        "type": "number"
+      },
+      {
+        "value": "mi",
+        "type": "string"
+      },
+      {
+        "value": "m",
+        "type": "string"
+      }
+    ],
+    "expected": {
+      "value": 40088.66,
+      "type": "number"
+    }
+  },
+  {
+    "fnArguments": [
+      {
+        "value": 50.50,
+        "type": "number"
+      },
+      {
+        "value": "gr",
+        "type": "string"
+      },
+      {
+        "value": "pound",
+        "type": "string"
+      }
+    ],
+    "expected": {
+      "value": 0.11,
+      "type": "number"
+    }
+  },
+  {
+    "fnArguments": [
+      {
+        "value": 50.50,
+        "type": "number"
+      },
+      {
+        "value": "pound",
+        "type": "string"
+      },
+      {
+        "value": "gr",
+        "type": "string"
+      }
+    ],
+    "expected": {
+      "value": 22906.4,
+      "type": "number"
+    }
+  }
+]
+

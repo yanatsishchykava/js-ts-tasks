@@ -1,0 +1,43 @@
+[
+  {
+    "fnArguments": [
+      {
+        "value": "22.10.2023",
+        "type": "string"
+      }
+    ],
+    "expected": {
+      "value": 71,
+      "type": "number"
+    }
+  },
+  {
+    "fnArguments": [
+      {
+        "value": "03.05.2021",
+        "type": "string"
+      }
+    ],
+    "expected": {
+      "value": 973,
+      "type": "number"
+    }
+  },
+  {
+    "fnArguments": [
+      {
+        "value": {
+          "year": 2023,
+          "month": 10,
+          "day": 22
+        },
+        "type": "Date"
+      }
+    ],
+    "expected": {
+      "value": 40,
+      "type": "number"
+    }
+  }
+]
+

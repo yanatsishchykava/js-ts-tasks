@@ -6,15 +6,17 @@
   "scripts": {
     "prepare": "husky install ./.husky",
     "test": "npm run test:junit",
-    "test:local": "mocha test",
-    "test:local:backToFront": "mocha test -g 'backToFront'",
-    "test:nyan": "mocha test --reporter nyan",
-    "test:report": "cross-env MOCHA_FILE=reports/report.xml mocha test --reporter mocha-xunit-reporter",
-    "test:junit": "cross-env MOCHA_FILE=junit.xml mocha test --reporter mocha-junit-reporter",
-    "test:xunit": "cross-env MOCHA_FILE=xunit.xml mocha test --reporter mocha-xunit-reporter",
-    "build": "echo \"Dummy build script\"",
-    "lint": "eslint -c .eslintrc src/*.js",
-    "lint:fix": "eslint -c .eslintrc src/*.js --fix",
+    "test:local": "tsc --noEmit && mocha -r ts-node/register test/index.ts",
+    "test:local:getDaysToNewYear": "tsc --noEmit && mocha -g 'getDaysToNewYear' -r ts-node/register test/index.ts",
+    "test:local:groupUsers": "tsc --noEmit && mocha -g 'groupUsers' -r ts-node/register test/index.ts",
+    "test:local:pangram": "tsc --noEmit && mocha -g 'pangram' -r ts-node/register test/index.ts",
+    "test:local:converter": "tsc --noEmit && mocha -g 'converter' -r ts-node/register test/index.ts",
+    "test:report": "tsc --noEmit && mocha -r ts-node/register test/index.ts --reporter mocha-xunit-reporter --reporter-options mochaFile=./xunit.xml",
+    "test:junit": "tsc --noEmit && mocha -r ts-node/register test/index.ts --reporter mocha-junit-reporter --reporter-options mochaFile=./junit.xml",
+    "test:xunit": "tsc --noEmit && mocha -r ts-node/register test/index.ts --reporter mocha-xunit-reporter --reporter-options mochaFile=./xunit.xml",
+    "build": "tsc --build --clean",
+    "lint": "eslint -c .eslintrc src/*.ts",
+    "lint:fix": "eslint -c .eslintrc src/*.ts --fix",
     "prettier": "prettier --check . --ignore-unknown --ignore-path ./config/.prettierignore",
     "prettier:fix": "prettier --write . --ignore-unknown --ignore-path ./config/.prettierignore"
   },
@@ -32,19 +34,29 @@
   "dependencies": {
     "chai": "^4.3.6",
     "cross-env": "^7.0.3",
+    "chai-as-promised": "^7.1.1",
+    "chai-spies": "^1.0.0",
     "mocha": "^10.0.0",
     "mocha-junit-reporter": "^2.1.0",
-    "mocha-xunit-reporter": "^2.3.0"
+    "mocha-xunit-reporter": "^2.3.0",
+    "sinon": "^16.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.9.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
     "eslint": "^8.25.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^6.0.0",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
   },
   "prettier": {
     "printWidth": 144,

@@ -1,0 +1,85 @@
+[
+  {
+    "fnArguments": [
+      {
+        "value": [
+          {
+            "name": "Bill",
+            "login": "bill01",
+            "surname": "Jobs",
+            "type": "EMPLOYEE",
+            "address": {
+              "officeId": 123,
+              "placeId": 1222
+            }
+          },
+          {
+            "name": "Fill",
+            "login": "fill007",
+            "surname": "Filler",
+            "type": "CONTRACTOR",
+            "contractorCompanyName": "Microsoft"
+          },
+          {
+            "name": "Alex",
+            "login": "alex777",
+            "type": "EMPLOYEE",
+            "address": {
+              "officeId": 222,
+              "placeId": 333
+            }
+          },
+          {
+            "name": "John",
+            "login": "coolJohn",
+            "type": "CONTRACTOR",
+            "contractorCompanyName": "Apple"
+          }
+        ],
+        "type": "Array"
+      }
+    ],
+    "expected": {
+      "value": {
+        "employees": [
+          {
+            "name": "Bill",
+            "login": "bill01",
+            "surname": "Jobs",
+            "type": "EMPLOYEE",
+            "address": {
+              "officeId": 123,
+              "placeId": 1222
+            }
+          },
+          {
+            "name": "Alex",
+            "login": "alex777",
+            "type": "EMPLOYEE",
+            "address": {
+              "officeId": 222,
+              "placeId": 333
+            }
+          }
+        ],
+        "contractors": [
+          {
+            "name": "Fill",
+            "login": "fill007",
+            "surname": "Filler",
+            "type": "CONTRACTOR",
+            "contractorCompanyName": "Microsoft"
+          },
+          {
+            "name": "John",
+            "login": "coolJohn",
+            "type": "CONTRACTOR",
+            "contractorCompanyName": "Apple"
+          }
+        ]
+      },
+      "type": "Object"
+    }
+  }
+]
+
