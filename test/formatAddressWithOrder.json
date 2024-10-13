@@ -44,6 +44,75 @@
       }
     ],
     "expected": "Lithuania, Vilnius, Savičiaus g, 17, 1, 01126"
+  },
+  {
+    "fnOuterArguments": [
+      [
+        "street",
+        "city",
+        "country",
+        "house",
+        "apartment",
+        "postalCode"
+      ]
+    ],
+    "fnArguments": [
+      {
+        "street": "Savičiaus g",
+        "house": "17",
+        "apartment": "1",
+        "city": "Vilnius",
+        "postalCode": "01126",
+        "country": "Lithuania"
+      }
+    ],
+    "expected": "Savičiaus g, Vilnius, Lithuania, 17, 1, 01126"
+  },
+  {
+    "fnOuterArguments": [
+      [
+        "street",
+        "country",
+        "city",
+        "postalCode",
+        "apartment",
+        "house"
+      ]
+    ],
+    "fnArguments": [
+      {
+        "street": "Savičiaus g",
+        "house": "17",
+        "apartment": "1",
+        "city": "Vilnius",
+        "postalCode": "01126",
+        "country": "Lithuania"
+      }
+    ],
+    "expected": "Savičiaus g, Lithuania, Vilnius, 01126, 1, 17"
+  },
+  {
+    "fnOuterArguments": [
+      [
+        "street",
+        "country",
+        "city",
+        "postalCode",
+        "apartment",
+        "house"
+      ]
+    ],
+    "fnArguments": [
+      {
+        "street": " ",
+        "house": " ",
+        "apartment": " ",
+        "city": " ",
+        "postalCode": " ",
+        "country": " "
+      }
+    ],
+    "expected": " ,  ,  ,  ,  ,  "
   }
 ]
 

@@ -26,6 +26,48 @@
       }
     ],
     "expected": "Savičiaus g, 17, 1, Vilnius, 01126, Lithuania"
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "street": "qwe vlds sdl sdl",
+        "house": "12222222",
+        "apartment": "1",
+        "city": "okfdok",
+        "postalCode": "09iSDF",
+        "country": "fkmgsd"
+      }
+    ],
+    "expected": "qwe vlds sdl sdl, 12222222, 1, okfdok, 09iSDF, fkmgsd"
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "street": "1",
+        "house": "1",
+        "apartment": "1",
+        "city": "1",
+        "postalCode": "1",
+        "country": "1"
+      }
+    ],
+    "expected": "1, 1, 1, 1, 1, 1"
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "street": " ",
+        "house": " ",
+        "apartment": " ",
+        "city": " ",
+        "postalCode": " ",
+        "country": " "
+      }
+    ],
+    "expected": " ,  ,  ,  ,  ,  "
   }
 ]
 

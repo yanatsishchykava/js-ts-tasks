@@ -13,6 +13,31 @@
     "fnOuterArguments": [["come", "tea", "rum", "go"]],
     "fnArguments": ["Soon may the Wellerman come\nTo bring us sugar and tea and rum\nOne day, when the tonguing is done\nWe'll take our leave and go"],
     "expected": "Soon may the Wellerman ****\nTo bring us sugar and *** and ***\nOne day, when the tonguing is done\nWe'll take our leave and **"
+  },
+  {
+    "fnOuterArguments": [["shore", "down on", "whale"]],
+    "fnArguments": ["She'd not been two weeks from shore\nWhen down on her, a right whale bore\nThe captain called all hands and swore\nHe'd take that whale in tow (huh!)"],
+    "expected": "She'd not been two weeks from *****\nWhen ******* her, a right ***** bore\nThe captain called all hands and swore\nHe'd take that ***** in tow (huh!)"
+  },
+  {
+    "fnOuterArguments": [["will we do with a drunken sailor"]],
+    "fnArguments": ["What will we do with a drunken sailor?\nWhat will we do with a drunken sailor?\nWhat will we do with a drunken sailor?\nEarly in the morning"],
+    "expected": "What ********************************?\nWhat ********************************?\nWhat ********************************?\nEarly in the morning"
+  },
+  {
+    "fnOuterArguments": [["a", "bc", "d"]],
+    "fnArguments": ["bb bc bb bca bb d bb abcd"],
+    "expected": "bb ** bb *** bb * bb ****"
+  },
+  {
+    "fnOuterArguments": [["ksddsfk", "f"]],
+    "fnArguments": ["of83u4 98fj290ejjksddsfkdcs0sdcsdcksd9 ksddsfk ewofk20ekf 02ek f 0 02ksddsfkek -2k 2ek f02e f2e- fkeksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfk20"],
+    "expected": "o*83u4 98*j290ejj*******dcs0sdcsdcksd9 ******* ewo*k20ek* 02ek * 0 02*******ek -2k 2ek *02e *2e- *ke*************************************************************************************************************************************20"
+  },
+  {
+    "fnOuterArguments": [["ksddsfk", "f"]],
+    "fnArguments": ["of83u4 98fj290ejjksddsfkdcs0sdcsdcksd9 ksddsfk ewofk20ekf 02ek f 0 02ksddsfkek -2k 2ek f02e f2e- fkeksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfkksddsfk20"],
+    "expected": "o*83u4 98*j290ejj*******dcs0sdcsdcksd9 ******* ewo*k20ek* 02ek * 0 02*******ek -2k 2ek *02e *2e- *ke*************************************************************************************************************************************20"
   }
 ]
 

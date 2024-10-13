@@ -77,3 +77,12 @@ Write a function which returns a function that returns array of [prime numbers](
 2. Ensure there's a `node_modules` folder (all packages are installed)
 3. In console run `npm run test:local` command to test your solution
 4. In console you will see results of your solution
+
+## Evaluation criterias - max 10 points
+
+If a task passes all of its test cases, then it gives its maximum points assigned for that task
+
+- censorship: 4 point(s)
+- formatAddress: 1 point(s)
+- formatAddressWithOrder: 1 point(s)
+- primeNumbers: 4 point(s)
