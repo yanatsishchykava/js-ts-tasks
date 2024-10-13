@@ -60,3 +60,17 @@ A list of available commands is specified in `package.json` file in `scripts` se
 ## Commit message rules
 
 Please follow `Commit message rules` instructions provided on `main` branch.
+
+## Evaluation criterias - max 10 points
+
+If a task passes all of its test cases, then it gives its maximum points assigned for that task
+
+- backToFront: 1 point(s)
+- compareSalary: 1 point(s)
+- compareTwoNumbers: 1 point(s)
+- digitsSum: 2 point(s)
+- divider: 1 point(s)
+- evalExpr: 1 point(s)
+- sumInRange: 1 point(s)
+- sumTwoNumbers: 1 point(s)
+- volumeCone: 1 point(s)

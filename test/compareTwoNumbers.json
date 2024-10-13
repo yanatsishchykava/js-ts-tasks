@@ -8,7 +8,15 @@
     "expected": "="
   },
   {
-    "fnArguments": [0, 7],
+    "fnArguments": [-1, -1],
+    "expected": "="
+  },
+  {
+    "fnArguments": [-45353, 1],
     "expected": "<"
+  },
+  {
+    "fnArguments": [0, 0],
+    "expected": "="
   }
 ]

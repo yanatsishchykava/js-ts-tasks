@@ -10,5 +10,17 @@
   {
     "fnArguments": [-2],
     "expected": -20
+  },
+  {
+    "fnArguments": [-254],
+    "expected": -2036
+  },
+  {
+    "fnArguments": [532],
+    "expected": 4252
+  },
+  {
+    "fnArguments": [-2546],
+    "expected": -20372
   }
 ]

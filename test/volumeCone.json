@@ -10,5 +10,9 @@
   {
     "fnArguments": [7, 1],
     "expected": 7.33
+  },
+  {
+    "fnArguments": [9434, 54],
+    "expected": 28807927.11
   }
 ]
