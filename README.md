@@ -126,3 +126,17 @@ A list of available commands is specified in `package.json` file in `scripts` se
 ## Commit message rules
 
 Please follow `Commit message rules` instructions provided on `main` branch.
+
+## Evaluation criterias - max 10 points
+
+If a task passes all of its test cases, then it gives its maximum points assigned for that task
+
+- diffElems: 1 point(s)
+- getDistance: 1 point(s)
+- getMaximalSequence: 1 point(s)
+- hasProperty: 1 point(s)
+- hunderedAfterOdd: 1 point(s)
+- maxCommonSub: 2 point(s)
+- partialSum: 1 point(s)
+- removeItems: 1 point(s)
+- replacement: 1 point(s)
