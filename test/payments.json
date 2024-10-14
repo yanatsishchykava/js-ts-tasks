@@ -28,5 +28,60 @@
       }
     ],
     "expected": 30
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "a": 1,
+        "b": 2,
+        "c": 3,
+        "d": 4
+      },
+      {
+        "a": 1,
+        "b": 1
+      }
+    ],
+    "expected": 8
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "a": 10
+      },
+      {
+        "a": 50,
+        "b": 100
+      }
+    ],
+    "expected": -140
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "a": 0
+      },
+      {
+        "a": 0,
+        "b": 0
+      }
+    ],
+    "expected": 0
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      {
+        "a": 1000
+      },
+      {
+        "a": 999,
+        "b": 998
+      }
+    ],
+    "expected": -997
   }
 ]

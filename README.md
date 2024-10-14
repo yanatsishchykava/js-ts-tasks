@@ -83,3 +83,11 @@ _Original task: https://leetcode.com/problems/valid-palindrome/_
 2. Ensure there's a `node_modules` folder (all packages are installed)
 3. In console run `npm run test:local` command to test your solution
 4. In console you will see results of your solution
+
+## Evaluation criterias - max 10 points
+
+If a task passes all of its test cases, then it gives its maximum points assigned for that task
+
+- palindrome: 4 point(s)
+- payments: 4 point(s)
+- sort: 2 point(s)

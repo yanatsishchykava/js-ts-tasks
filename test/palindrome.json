@@ -19,5 +19,54 @@
       " "
     ],
     "expected": true
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      "v9u4nv9032ef92jnfj 9 djd9 2jf9jd0fj20j93jfj 2f9js9j29 jd9j2 f092jd 9jdf d0930924i 3290 4u239fdje2"
+    ],
+    "expected": false
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      "7777777777777777777777777777777777777777777777777777777777777777777777 7 7 7 7 7 77 7 7 7 7 7 77 7 7 7 7 77777777777777777777"
+    ],
+    "expected": true
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      "                                     , ., ., . ,.,. ,., .,. ,.,.,,.$$$$$  $  $<>< ><$ ><>$ <$><>$<><$ <$ >"
+    ],
+    "expected": true
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      "MAMA  ,.,.,. ,. , AMAM ,"
+    ],
+    "expected": true
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      "90RV3290NRC0293IRC0923IRI2039CD230CE90I9999999999999999999999"
+    ],
+    "expected": false
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      "7                                        8, ,,,,  9 ##@@!98  $%$$7a"
+    ],
+    "expected": false
+  },
+  {
+    "fnOuterArguments": [],
+    "fnArguments": [
+      "7                                        8, ,,,,  9 ##@@!98  $%$$7"
+    ],
+    "expected": true
   }
 ]
