@@ -1,4 +1,4 @@
-# Tasks: 04 Functions
+# Tasks: 03 Functions
 
 ## Task description
 
