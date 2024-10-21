@@ -1,30 +1,20 @@
-# Tasks: 01 Basic Operators
+# Codewars Tasks 03
 
-## Task description
+Your task is to solve Codewars tasks (Kata) from the list below:
 
-Here are several small tasks. Each of them is located in their own js files.
+- Array helpers https://www.codewars.com/kata/array-helpers
+- Counting Duplicates https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1
+- Closures and Scopes https://www.codewars.com/kata/closures-and-scopes
+- Human readable duration format https://www.codewars.com/kata/52742f58faf5485cae000b9a
+- Next smaller number with the same digits https://www.codewars.com/kata/5659c6d896bc135c4c00021e
 
-### backToFront.js
+## Scoring
 
-Copy and paste defined amount of a string's symbols to the front and back of a string
+Each task costs 2 points. Maximum is 10 points.
 
-## How to run tasks locally
+## How to submit solution to Moodle
 
-The following commands are useful to run your code locally
-
-### Run all tasks at once
-
-`npm run test:local` - iterates throught all `src/*.js` files and test your solutions
-
-### Run a certain task
-
-You could specify a name of each individual task to run that locally
-
-`npm run test:local:backToFront` - run test cases only for `backToFront` task
-`npm run test:local:sum` - run test cases only for `sum` task
-
-A list of available commands is specified in `package.json` file in `scripts` section
-
-## Commit message rules
-
-Please follow `Commit message rules` instructions provided on `main` branch.
+1. Open relevant Assigment in Moodle
+2. Click submit solution button
+3. Write down how many tasks your solved
+4. Attach a screenshort (one or several) from your Codewars profile where it will be visible how many tasks you've solved and what exact of them
