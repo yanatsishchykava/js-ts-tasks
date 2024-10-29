@@ -32,7 +32,7 @@ you can get your public key by run in terminal `cat ~/.ssh/id_rsa.pub`
 
 ### Cloning your forked repository with tasks into your local machine
 
-1. Navigate to your forker repository and click on blue button `Clone`
+1. Navigate to your forker repository and click on green button `Clone`
 2. In dropdown find section **Clone with SSH** and copy that url git@github:...git
 3. In console on your machine navigate to any folder you like and paste copied url after git clone: `git clone git@github...tasks.git`
 4. Type in yes if console asks you about fingerprint
