@@ -5,7 +5,10 @@ const fs = require('fs');
 const solutionsPath = path.join(__dirname, '../src');
 const testPath = __dirname;
 
-const solutions: string[] = fs.readdirSync(solutionsPath);
+const tests: string[] = fs
+  .readdirSync(testPath)
+  .filter((v: string) => v.endsWith('json'))
+  .map((v: string) => v.replace('.json', ''));
 
 type TTestCaseFnAgrValue = Date | number | boolean | string | Array<unknown> | Record<string, unknown>;
 type TTestCaseFnAgrJsonValue = 'Date' | 'number' | 'boolean' | 'string' | 'Array' | 'Object';
@@ -56,16 +59,15 @@ function mapFnAgrFromJsonToJs(arg: TTestCaseFnArg): TTestCaseFnAgrValue {
   }
 }
 
-solutions.forEach(solution => {
-  const testName = solution.replace(/\.ts/, '');
+tests.forEach(testName => {
   // eslint-disable-next-line import/no-dynamic-require,global-require
-  const importedModule = require(`${solutionsPath}/${solution}`);
+  const importedModule = require(`${solutionsPath}/${testName}.ts`);
   const method = importedModule[testName];
   // eslint-disable-next-line import/no-dynamic-require,global-require
   const testCases = require(`${testPath}/${testName}`);
 
   if (method) {
-    describe(solution, () => {
+    describe(testName, () => {
       testCases.forEach((testCase: TTestCase) => {
         it(`should return "${JSON.stringify(
           testCase.expected.type === 'Array' ? new Array(testCase.expected.value) : testCase.expected.value
