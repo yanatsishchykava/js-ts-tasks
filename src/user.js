@@ -30,9 +30,9 @@ module.exports.createUsers = function (data) {
 
 /**
  * Find Users in Array of Users who's age equals the provided age
- * @param {Array<Users>} users
+ * @param {Array<User>} users
  * @param {number} age
- * @returns {Array<Users>}
+ * @returns {Array<User>}
  */
 module.exports.findUsersByAge = function (users, age) {
   throw new Error('Not implemented'); // remove this line and put your code here
