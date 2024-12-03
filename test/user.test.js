@@ -193,14 +193,17 @@ describe('User usage', () => {
 
     const usersAfterBirthday = celebrate(users);
 
-    assert.deepEqual(usersAfterBirthday, [
-      new User('John', 'Silver', 19),
-      new User('Mary', 'Jane', 23),
-      new User('Vasil', 'Lykov', 55),
-      new User('Mark', 'Kondratov', 7),
-      new User('Gennifer', 'Roland', 35),
-      new User('Adam', 'Solvey', 20),
-      new User('Aaron', 'Jene', 41),
-    ]);
+    assert.deepEqual(
+        usersAfterBirthday.map((user) => user.introduce()),
+        [
+          new User('John', 'Silver', 19),
+          new User('Mary', 'Jane', 23),
+          new User('Vasil', 'Lykov', 55),
+          new User('Mark', 'Kondratov', 7),
+          new User('Gennifer', 'Roland', 35),
+          new User('Adam', 'Solvey', 20),
+          new User('Aaron', 'Jene', 41),
+        ].map((user) => user.introduce()),
+    );
   });
 });
