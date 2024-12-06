@@ -24,7 +24,19 @@ const makeControllablePromise = () => {
   };
 };
 
+const originalPromiseRace = Promise.race;
+
 describe('race', () => {
+  beforeEach(() => {
+    Promise.race = function () {
+      throw new Error('Promise.race is not allowed');
+    };
+  });
+
+  afterEach(() => {
+    Promise.race = originalPromiseRace;
+  });
+
   it('should resolve as soon as first promise resolved', done => {
     const promise1 = makeControllablePromise();
     const promise2 = makeControllablePromise();

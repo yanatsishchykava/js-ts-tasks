@@ -24,7 +24,19 @@ const makeControllablePromise = () => {
   };
 };
 
+const originalPromiseAll = Promise.all;
+
 describe('all', () => {
+  beforeEach(() => {
+    Promise.all = function () {
+      throw new Error('Promise.all is not allowed');
+    };
+  });
+
+  afterEach(() => {
+    Promise.all = originalPromiseAll;
+  });
+
   it('should wait for all promises to resolve', done => {
     const promise1 = makeControllablePromise();
     const promise2 = makeControllablePromise();
