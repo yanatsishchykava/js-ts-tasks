@@ -11,7 +11,11 @@ const DELAY = 500;
 
 describe('mockApi', function () {
   let clock;
-  const mock = mockApi(RESPONSE, DELAY);
+  let mock;
+
+  before(() => {
+    mock = mockApi(RESPONSE, DELAY);
+  });
 
   beforeEach(function () {
     clock = sinon.useFakeTimers();
