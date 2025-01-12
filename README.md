@@ -1,30 +1,28 @@
-# Tasks: 01 Basic Operators
+# Tasks: HTML CSS
 
 ## Task description
 
-Here are several small tasks. Each of them is located in their own js files.
+Your task is to create an HTML/CSS instagram profile according to the provided Figma design. An Iphone frame is being given to you. Put your solution inside it (follow the comments in `src/index.html` and `src/style.css` files). There is no need to do it pixel-perfect. Close to the original Figma design will be enough.
 
-### backToFront.js
+## Figma
 
-Copy and paste defined amount of a string's symbols to the front and back of a string
+[Figma link](<https://www.figma.com/design/3F0aWYwYQKQK1jtSsXRVFo/Instagram-profile-template--(Updated)-(Community)?node-id=508-38&t=WJf6o9lsYwkyzuS8-0>)
 
-## How to run tasks locally
+<details>
+    <summary>Design to be implemented</summary>
 
-The following commands are useful to run your code locally
+    <img src="./example/Profile_Page.jpg" />
 
-### Run all tasks at once
+</details>
 
-`npm run test:local` - iterates throught all `src/*.js` files and test your solutions
+Design to be implemented you could find in the Profile section on the left navigation menu (Pages -> Profile)
 
-### Run a certain task
+## Evaluation criterias - max 10 points
 
-You could specify a name of each individual task to run that locally
-
-`npm run test:local:backToFront` - run test cases only for `backToFront` task
-`npm run test:local:sum` - run test cases only for `sum` task
-
-A list of available commands is specified in `package.json` file in `scripts` section
-
-## Commit message rules
-
-Please follow `Commit message rules` instructions provided on `main` branch.
+- Implemented row with user_name - 1 points
+- Implemented row with Profile Photo, 129 posts, 3680 Followers and 230 Following - 1 points
+- Implemented row with Name, Local business, www.website.com - 1 points
+- Implemented row with buttons Follow, Message, Email - 1 points
+- Implemented row with stories highlights - 1 points
+- Implemented image gallery - 4 points
+- Implemented row with navigation icons - 1 points
