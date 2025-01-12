@@ -15,6 +15,9 @@ Your task is to create an HTML/CSS instagram profile according to the provided F
 
 Design to be implemented you could find in the Profile section on the left navigation menu (Pages -> Profile)
 
+Hint: how to measure distances in Figma https://www.youtube.com/watch?v=f_vw_tXtVdk
+Hint: how to download assets (images, logos, etc) from Figma https://www.youtube.com/watch?v=T3rUlKf40M0
+
 ## Evaluation criterias - max 10 points
 
 - Implemented row with user_name - 1 points
