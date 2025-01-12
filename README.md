@@ -9,10 +9,8 @@ Your task is to create an HTML/CSS instagram profile according to the provided F
 [Figma link](<https://www.figma.com/design/3F0aWYwYQKQK1jtSsXRVFo/Instagram-profile-template--(Updated)-(Community)?node-id=508-38&t=WJf6o9lsYwkyzuS8-0>)
 
 <details>
-    <summary>Design to be implemented</summary>
-
-    <img src="./example/Profile_Page.jpg" />
-
+  <summary>Design to be implemented</summary>
+   <img src="./example/Profile_Page.jpg" />
 </details>
 
 Design to be implemented you could find in the Profile section on the left navigation menu (Pages -> Profile)
