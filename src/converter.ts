@@ -6,5 +6,16 @@
  * @returns {number}
  */
 module.exports.converter = function (value: number, from: string, to: string): number {
-  throw new Error('Not implemented'); // delete this line and write your code
+
+  if (from === to) return parseFloat(value.toFixed(2));
+
+  switch (`${from}-${to}`) {
+    case 'C-K': return parseFloat((value + 273.15).toFixed(2));
+    case 'K-C': return parseFloat((value - 273.15).toFixed(2));
+    case 'gr-pound': return parseFloat((value * 0.00220462).toFixed(2));
+    case 'pound-gr': return parseFloat((value * 453.592).toFixed(2));
+    case 'm-mi': return parseFloat((value / 1609.344).toFixed(2));
+    case 'mi-m': return parseFloat((value * 1609.344).toFixed(2));
+    default: throw new Error('Error: the conversion cannot be performed.');
+  }
 };

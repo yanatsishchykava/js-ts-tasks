@@ -6,5 +6,17 @@
  * @returns {boolean}
  */
 module.exports.pangram = function (word: string | number): boolean {
-  throw new Error('Not implemented'); // delete this line and write your code
+  const input = word.toString().toLowerCase();
+  if (isNaN(Number(word))) {
+    const alphabet = new Set('abcdefghijklmnopqrstuvwxyz');
+    for (const char of input) {
+      alphabet.delete(char);
+  }
+  return alphabet.size === 0;
+}
+const digits = new Set('0123456789');
+  for (const char of input) {
+    digits.delete(char);
+  }
+  return digits.size === 0;
 };
